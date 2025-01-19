@@ -24,7 +24,7 @@ const InteractiveMap = ({ profiles }) => {
 
         {/* Markers for Profiles */}
         {profiles.map((profile) => (
-          <Marker key={profile.id} position={profile.coordinates}>
+          <Marker key={profile.id} position={profile.coordinates} icon={customIcon}>
             {/* <Marker position={profile.coordinates} icon={customIcon} /> */}
             <Popup>
         <div>
